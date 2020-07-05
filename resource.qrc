@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/icones">
+        <file>ic_settings.png</file>
+        <file>Preloader.gif</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>Roboto-Light.ttf</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>material.qss</file>
+    </qresource>
+    <qresource prefix="/qss/icons">
+        <file>checkBox.png</file>
+        <file>checkBoxFocused.png</file>
+        <file>checkBoxFocusedOff.png</file>
+        <file>checkBoxOffNormal.png</file>
+        <file>checkBoxOffPressed.png</file>
+        <file>checkBoxPressed.png</file>
+    </qresource>
+    <qresource prefix="/features/icons">
+        <file>icons/icons8_Add_Folder_48px.png</file>
+        <file>icons/icons8_Add_Row_48px.png</file>
+        <file>icons/icons8_Cancel_48px.png</file>
+        <file>icons/icons8_Copy_48px_2.png</file>
+        <file>icons/icons8_Cut_48px.png</file>
+        <file>icons/icons8_Delete_48px.png</file>
+        <file>icons/icons8_Delete_Row_48px.png</file>
+        <file>icons/icons8_Edit_Row_48px_1.png</file>
+        <file>icons/icons8_Exit_48px_1.png</file>
+        <file>icons/icons8_Folder_48px.png</file>
+        <file>icons/icons8_FTP_48px.png</file>
+        <file>icons/icons8_Index_48px.png</file>
+        <file>icons/icons8_No_Entry_48px.png</file>
+        <file>icons/icons8_Play_48px.png</file>
+        <file>icons/icons8_Remove_Folder_48px.png</file>
+        <file>icons/icons8_Rename_48px.png</file>
+        <file>icons/icons8_Search_48px.png</file>
+        <file>icons/icons8_Search_Stop_48px.png</file>
+        <file>icons/icons8_Settings_48px.png</file>
+        <file>icons/icons8_Settings_Reset_48px.png</file>
+        <file>icons/icons8_Show_Property_48px.png</file>
+        <file>icons/icons8_Stop_48px.png</file>
+        <file>icons/icons8_Stop_FTP_48px.png</file>
+    </qresource>
+</RCC>

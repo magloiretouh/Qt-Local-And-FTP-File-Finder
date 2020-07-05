@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WindowsS</class>
+ <widget class="QMainWindow" name="WindowsS">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>738</width>
+    <height>445</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Advanced File Search</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="customComboBox" name="comboListType">
+        <property name="editable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="rootFolder">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QWidget" name="ftpLayout" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLineEdit" name="hostLineEdit">
+         <property name="placeholderText">
+          <string>Adresse IP</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="username">
+         <property name="placeholderText">
+          <string>Nom d'utilisateur</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="password">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>Mot de passe</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="portEdit">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="maximum">
+          <number>999999</number>
+         </property>
+         <property name="value">
+          <number>21</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="nameLayout_2" native="true">
+      <layout class="QHBoxLayout" name="nameLayout">
+       <item>
+        <widget class="QLineEdit" name="nameField">
+         <property name="placeholderText">
+          <string>File name</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="sizeLayout" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Minimum size (Mo)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="minimumSize">
+         <property name="maximum">
+          <number>999999999</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Maximum size (Mo)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="maximumSize">
+         <property name="maximum">
+          <number>999999999</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="createdDateLayout" native="true">
+      <layout class="QHBoxLayout" name="dateCreationLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Created date(Minimum date)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="minimumCreatedDate">
+         <property name="displayFormat">
+          <string>dd/MM/yyyy</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Created date(Maximum date)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="maximumCreatedDate"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="modifiedDateLayout" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Modified date(Minimum date)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="minimumModifiedDate"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Modified date(Maximum date)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="maximumModifiedDate"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="lastAccessLayout_2" native="true">
+      <layout class="QHBoxLayout" name="lastAccessLayout">
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Last access date(Minimum date)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="minimumLastAccessDate"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Last access date(Maximum date)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="maximumLastAccessDate_2"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="filterLayout" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QLineEdit" name="filterLineEdit">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #5bc0de;
+    font-family : &quot;Century Gothic&quot;;
+    font-size: 19px;
+    background-color: transparent;
+}
+
+QLineEdit:hover, QLineEdit:focus {
+    border-bottom: 1px solid #bdeaf8;
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>Filter</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>738</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionAjouter_repertoire_de_recherche"/>
+    <addaction name="actionSupprimer_repertoire"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuActions">
+    <property name="title">
+     <string>Actions</string>
+    </property>
+    <addaction name="actionRechercher"/>
+    <addaction name="actionAnnuler_recherche"/>
+    <addaction name="separator"/>
+    <addaction name="actionLire"/>
+    <addaction name="actionRenommer"/>
+    <addaction name="actionCopier"/>
+    <addaction name="actionD_placer"/>
+    <addaction name="actionSupprimer"/>
+    <addaction name="actionOuvrir_l_emplacement"/>
+    <addaction name="separator"/>
+    <addaction name="actionActiver_mode_FTP"/>
+    <addaction name="actionD_sactiver_mode_FTP"/>
+   </widget>
+   <widget class="QMenu" name="menuExtensions">
+    <property name="title">
+     <string>Extensions</string>
+    </property>
+    <addaction name="actionModifierExtensions"/>
+    <addaction name="separator"/>
+    <addaction name="actionAjouter_extensions"/>
+    <addaction name="actionSupprimer_extensions"/>
+   </widget>
+   <widget class="QMenu" name="menuParam_tres">
+    <property name="title">
+     <string>Paramètres</string>
+    </property>
+    <addaction name="actionParam_tres"/>
+    <addaction name="actionR_nitialiser"/>
+   </widget>
+   <widget class="QMenu" name="menuA_propos">
+    <property name="title">
+     <string>A propos</string>
+    </property>
+    <addaction name="actionIcon8_App"/>
+    <addaction name="actionAdvanced_search"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuActions"/>
+   <addaction name="menuExtensions"/>
+   <addaction name="menuParam_tres"/>
+   <addaction name="menuA_propos"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAjouter_repertoire_de_recherche"/>
+   <addaction name="actionSupprimer_repertoire"/>
+   <addaction name="separator"/>
+   <addaction name="actionRechercher"/>
+   <addaction name="actionAnnuler_recherche"/>
+   <addaction name="separator"/>
+   <addaction name="actionLire"/>
+   <addaction name="actionRenommer"/>
+   <addaction name="actionCopier"/>
+   <addaction name="actionD_placer"/>
+   <addaction name="actionSupprimer"/>
+   <addaction name="actionOuvrir_l_emplacement"/>
+   <addaction name="separator"/>
+   <addaction name="actionAjouter_extensions"/>
+   <addaction name="actionModifierExtensions"/>
+   <addaction name="actionSupprimer_extensions"/>
+   <addaction name="separator"/>
+   <addaction name="actionActiver_mode_FTP"/>
+   <addaction name="actionD_sactiver_mode_FTP"/>
+   <addaction name="separator"/>
+   <addaction name="actionParam_tres"/>
+   <addaction name="actionR_nitialiser"/>
+  </widget>
+  <action name="actionCopier">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Copy_48px_2.png</normaloff>:/features/icons/icons/icons8_Copy_48px_2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copier</string>
+   </property>
+  </action>
+  <action name="actionD_placer">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Cut_48px.png</normaloff>:/features/icons/icons/icons8_Cut_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Déplacer</string>
+   </property>
+  </action>
+  <action name="actionSupprimer">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Delete_48px.png</normaloff>:/features/icons/icons/icons8_Delete_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Supprimer</string>
+   </property>
+  </action>
+  <action name="actionLire">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Play_48px.png</normaloff>:/features/icons/icons/icons8_Play_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Lire</string>
+   </property>
+  </action>
+  <action name="actionRenommer">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Rename_48px.png</normaloff>:/features/icons/icons/icons8_Rename_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Renommer</string>
+   </property>
+  </action>
+  <action name="actionRechercher">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Search_48px.png</normaloff>:/features/icons/icons/icons8_Search_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rechercher</string>
+   </property>
+  </action>
+  <action name="actionAnnuler_recherche">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Search_Stop_48px.png</normaloff>:/features/icons/icons/icons8_Search_Stop_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Annuler recherche</string>
+   </property>
+  </action>
+  <action name="actionAjouter_extensions">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Add_Row_48px.png</normaloff>:/features/icons/icons/icons8_Add_Row_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ajouter extensions</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_extensions">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Delete_Row_48px.png</normaloff>:/features/icons/icons/icons8_Delete_Row_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Supprimer extensions</string>
+   </property>
+  </action>
+  <action name="actionModifierExtensions">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Edit_Row_48px_1.png</normaloff>:/features/icons/icons/icons8_Edit_Row_48px_1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Extensions</string>
+   </property>
+  </action>
+  <action name="actionParam_tres">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Settings_48px.png</normaloff>:/features/icons/icons/icons8_Settings_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paramètres</string>
+   </property>
+  </action>
+  <action name="actionR_nitialiser">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Settings_Reset_48px.png</normaloff>:/features/icons/icons/icons8_Settings_Reset_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rénitialiser</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Exit_48px_1.png</normaloff>:/features/icons/icons/icons8_Exit_48px_1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionAjouter_repertoire_de_recherche">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Add_Folder_48px.png</normaloff>:/features/icons/icons/icons8_Add_Folder_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ajouter repertoire</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_repertoire">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Remove_Folder_48px.png</normaloff>:/features/icons/icons/icons8_Remove_Folder_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Supprimer repertoire</string>
+   </property>
+  </action>
+  <action name="actionAdvanced_search">
+   <property name="text">
+    <string>Advanced file search</string>
+   </property>
+  </action>
+  <action name="actionIcon8_App">
+   <property name="text">
+    <string>Icon8 App</string>
+   </property>
+  </action>
+  <action name="actionOuvrir_l_emplacement">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Folder_48px.png</normaloff>:/features/icons/icons/icons8_Folder_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir l'emplacement du fichier</string>
+   </property>
+  </action>
+  <action name="actionActiver_mode_FTP">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_FTP_48px.png</normaloff>:/features/icons/icons/icons8_FTP_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Activer mode FTP</string>
+   </property>
+  </action>
+  <action name="actionD_sactiver_mode_FTP">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/features/icons/icons/icons8_Stop_FTP_48px.png</normaloff>:/features/icons/icons/icons8_Stop_FTP_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Désactiver mode FTP</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>customComboBox</class>
+   <extends>QComboBox</extends>
+   <header>customcombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,168 @@
+QWidget {
+    selection-background-color: darkCyan;
+    selection-color: dark;
+    outline: 0;
+}
+
+QPushButton {
+    margin: 0;
+    width: auto;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    background-image: none;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+QPushButton:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #1b6d85;
+}
+
+QPushButton:hover {
+    color: #333;
+    text-decoration: none;
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+QPushButton:disabled {
+    opacity: 0.65
+}
+
+QPushButton:active  {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+QPushButton:active:hover {
+    color: #fff;
+    background-color: #269abc;
+    border-color: #1b6d85;
+}
+
+QPushButton:disabled, QPushButton:disabled:hover {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+QComboBox  {
+    width: auto;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    color: #fff;
+    height: 12px;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+QComboBox:hover {
+    border: 1px solid #fff;
+}
+
+QComboBox:disabled {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    opacity: 0.65
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: url('icon-go.png');
+    height: 5px;
+}
+
+QSpinBox, QDoubleSpinBox, QDateEdit, QDateTimeEdit, QLineEdit {
+    border: 1px solid #5bc0de;
+    width: auto;
+    height : 24px;
+}
+
+QSpinBox:up-button, QDoubleSpinBox:up-button, QDateEdit:up-button, QDateTimeEdit:up-button {
+    subcontrol-position: top right;
+}
+
+QSpinBox:down-button, QDoubleSpinBox:down-button, QDateEdit:down-button, QDateTimeEdit:down-button  {
+    subcontrol-position: bottom right;
+}
+
+QSpinBox:up-button, QSpinBox:down-button,
+QDoubleSpinBox:up-button, QDoubleSpinBox:down-button,
+QDateEdit:up-button, QDateEdit:down-button,
+QDateTimeEdit:up-button, QDateTimeEdit:down-button{
+    border: 1px solid transparent;
+    background-color: #5bc0de;
+    width: 12px;
+}
+
+QSpinBox::down-arrow, QDoubleSpinBox::down-arrow, QDateEdit::down-arrow, QDateTimeEdit::down-arrow {
+    image: url('icon-down.png');
+    height: 5px;
+}
+
+QSpinBox::up-arrow, QDoubleSpinBox::up-arrow, QDateEdit::up-arrow, QDateTimeEdit::up-arrow {
+    image: url('icon-up.png');
+    height: 5px;
+}
+
+QSpinBox::down-button:hover, QSpinBox::up-button:hover,
+QDoubleSpinBox::down-button:hover, QDoubleSpinBox::up-button:hover,
+QDateEdit::down-button:hover, QDateEdit::up-button:hover,
+QDateTimeEdit::down-button:hover, QDateTimeEdit::up-button:hover{
+        background-color: #31b0d5;
+}
+
+QCheckBox {
+    height : 25px;
+    width: 25px;
+}
+
+QCheckBox::indicator::unchecked {
+     image: url(:/qss/icons/checkBoxOffNormal.png);
+    height : 16px;
+    width: 16px;
+}
+
+QCheckBox::indicator::unchecked:focus {
+     image: url(:/qss/icons/checkBoxFocusedOff.png);
+    height : 25px;
+    width: 25px;
+}
+
+QCheckBox::indicator::unchecked:pressed {
+     image: url(:/qss/icons/checkBoxOffPressed.png);
+    height : 25px;
+    width: 25px;
+}
+
+QCheckBox::indicator::checked {
+     image: url(:/qss/icons/checkBox.png);
+    height : 16px;
+    width: 16px;
+}
+
+QCheckBox::indicator::checked:focus {
+     image: url(:/qss/icons/checkBoxFocused.png);
+    height : 25px;
+    width: 25px;
+}
+
+QCheckBox::indicator::checked:pressed {
+     image: url(:/qss/icons/checkBoxPressed.png);
+    height : 25px;
+    width: 25px;
+}
